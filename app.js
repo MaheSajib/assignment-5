@@ -28,16 +28,16 @@ const displayMeals = meals => {
     });
 }
 
-const displayMealsDetails = name =>{
-    const mealSearch = document.getElementById('mealInput').value;
-    fetch('https://www.themealdb.com/api/json/v1/1/search.php?f='+mealSearch)
-    .then(res => res.json())
-    .then(meal => console.log(meal[0].strMeal));
+// const displayMealsDetails = name =>{
+//     const mealSearch = document.getElementById('mealInput').value;
+//     fetch('https://www.themealdb.com/api/json/v1/1/search.php?f='+mealSearch)
+//     .then(res => res.json())
+//     .then(meal => console.log(meal[0].strMeal));
 
     // fetch(url)
     // .then(res => res.json())
     // .then(data => mealInfo(data[0]));
-}
+// }
 
 // const mealList = meal => {
 //     const mealDiv = document.getElementById('mealDetail');
