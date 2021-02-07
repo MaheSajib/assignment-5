@@ -6,14 +6,6 @@ fetch('https://www.themealdb.com/api/json/v1/1/search.php?f='+mealSearch)
 })
 
 
-
-
-
-// fetch('https://www.themealdb.com/api/json/v1/1/search.php?f=b')
-//     .then(res => res.json())
-//     .then(res => displayMeals(res.meals));
-
-
 const displayMeals = meals => {
     const mealsDiv = document.getElementById('meals');
     meals.forEach(meal => {
