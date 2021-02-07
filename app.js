@@ -28,17 +28,22 @@ const displayMeals = meals => {
     });
 }
 
-const displayMealsDetails = mealSearch =>{
+const displayMealsDetails = name =>{
+    const mealSearch = document.getElementById('mealInput').value;
     fetch('https://www.themealdb.com/api/json/v1/1/search.php?f='+mealSearch)
     .then(res => res.json())
-    .then(data => mealInfo(data[0]));
+    .then(meal => console.log(meal[0].strMeal));
+
+    // fetch(url)
+    // .then(res => res.json())
+    // .then(data => mealInfo(data[0]));
 }
 
-const mealInfo = meal => {
-    const mealDiv = document.getElementById('mealDetail');
-    mealDiv.innerHTML =`
-        <img id="thumbPic" src="${meal.strMealThumb}">
-        <h1>${meal.strMeal}</h1>
-        <p>${meal.strIngredient1}</p>
-    `
-}
+// const mealList = meal => {
+//     const mealDiv = document.getElementById('mealDetail');
+//     mealDiv.innerHTML =`
+//         <img id="thumbPic" src="${meal.strMealThumb}">
+//         <h1>${meal.strMeal}</h1>
+//         <p>${meal.strIngredient1}</p>
+//     `
+// }
