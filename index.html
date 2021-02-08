@@ -15,16 +15,16 @@
   <div class="container">
     <form class="col-md-6 m-auto py-5">
         <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Search for Meal" id="mealInput">
+            <input id="mealInput" type="text" class="form-control" placeholder="Search for Meal">
             <div class="input-group-append">
-                <button id="search-btn" type="button" class="btn btn-danger">Search</button>
+                <button onclick="searchMeals()" type="button" class="btn btn-danger">Search</button>
             </div>
         </div>
       </form>
   </div>
-  <div id="meals">
+  <div  id="meal-list">
       
   </div>
-  <script src="app.js"></script>  
+  <script src="app.js"></script> 
 </body>
 </html>

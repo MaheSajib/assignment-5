@@ -1,14 +1,13 @@
-#meals{
+#meal-list{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
 }
-.meal{
+.mealList{
     border: 1px solid maroon;
     border-radius: 20px;
     padding: 20px;
     text-align: center;
-    width: 300px;
 
 }
 .meal-name{
