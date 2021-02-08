@@ -14,13 +14,16 @@ const displayMeals = meals =>{
         mealDiv.className = 'mealList'
         mealDiv.innerHTML =`
         <img id="thumbPic" src="${meal.strMealThumb}">
-        <h1>${meal.strMeal}</h1>
+        <h2 onclick="mealDetail('${meal.strMealThumb}','${meal.strMeal}','${meal.strCategory}')">${meal.strMeal}</h2>
     `
         mealList.appendChild(mealDiv);
     });
 }
 
-
+const mealDetail = (img, name, ingredient) =>{
+    console.log(img, name, ingredient);
+    // const url =`https://www.themealdb.com/api/json/v1/1/list.php?i=${ingredient}`
+}
 
 
 
